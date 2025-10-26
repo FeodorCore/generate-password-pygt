@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'generate_password — копия.ui'
+# Form implementation generated from reading ui file 'generate_password.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.11
 #
@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
-        MainWindow.resize(858, 330)
+        MainWindow.resize(753, 293)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -27,6 +27,66 @@ class Ui_MainWindow(object):
         self.gridLayout_2.setObjectName("gridLayout_2")
         self.gridLayout = QtWidgets.QGridLayout()
         self.gridLayout.setObjectName("gridLayout")
+        self.horizontalLayout_9 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_9.setObjectName("horizontalLayout_9")
+        self.horizontalLayout_11 = QtWidgets.QHBoxLayout()
+        self.horizontalLayout_11.setObjectName("horizontalLayout_11")
+        self.verticalLayout = QtWidgets.QVBoxLayout()
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.horizontalSlider = QtWidgets.QSlider(self.centralwidget)
+        self.horizontalSlider.setStyleSheet("QSlider::groove:horizontal {\n"
+"    height: 12px;                 /* толщина дорожки (было 6px) */\n"
+"    background: #D9D9D9;          /* цвет дорожки */\n"
+"    border-radius: 6px;           /* скругление под новую толщину */\n"
+"}\n"
+"\n"
+"QSlider::handle:horizontal {\n"
+"    background: #2CE429;          /* цвет бегунка */\n"
+"    border: 2px solid #999999;    /* рамка */\n"
+"    width: 24px;                  /* ширина бегунка */\n"
+"    height: 24px;                 /* высота бегунка (было 20px) */\n"
+"    margin: -10px 0;              /* центрируем относительно дорожки */\n"
+"    border-radius: 12px;          /* круг (половина от width/height) */\n"
+"}\n"
+"")
+        self.horizontalSlider.setOrientation(QtCore.Qt.Horizontal)
+        self.horizontalSlider.setObjectName("horizontalSlider")
+        self.verticalLayout.addWidget(self.horizontalSlider)
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        font = QtGui.QFont()
+        font.setFamily("Courier New")
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_3.setFont(font)
+        self.label_3.setStyleSheet("color: #2CE429;\n"
+"font-size: 25pt;\n"
+"font-weight: regular;")
+        self.label_3.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_3.setObjectName("label_3")
+        self.verticalLayout.addWidget(self.label_3)
+        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.pushButton.sizePolicy().hasHeightForWidth())
+        self.pushButton.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Courier New")
+        font.setPointSize(30)
+        font.setBold(True)
+        font.setWeight(75)
+        self.pushButton.setFont(font)
+        self.pushButton.setFocusPolicy(QtCore.Qt.NoFocus)
+        self.pushButton.setStyleSheet("border-radius: 15px;\n"
+"background-color: #2CE429;\n"
+"font-size: 30pt;\n"
+"font-weight: regular;")
+        self.pushButton.setObjectName("pushButton")
+        self.verticalLayout.addWidget(self.pushButton)
+        self.horizontalLayout_11.addLayout(self.verticalLayout)
+        self.horizontalLayout_9.addLayout(self.horizontalLayout_11)
+        self.gridLayout.addLayout(self.horizontalLayout_9, 3, 0, 1, 1)
         self.horizontalLayout_10 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_10.setObjectName("horizontalLayout_10")
         self.checkBox_2 = QtWidgets.QCheckBox(self.centralwidget)
@@ -179,7 +239,7 @@ class Ui_MainWindow(object):
 "}")
         self.checkBox_3.setObjectName("checkBox_3")
         self.horizontalLayout_10.addWidget(self.checkBox_3)
-        self.gridLayout.addLayout(self.horizontalLayout_10, 3, 0, 1, 1)
+        self.gridLayout.addLayout(self.horizontalLayout_10, 2, 0, 1, 1)
         self.horizontalLayout_2 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_2.setSizeConstraint(QtWidgets.QLayout.SetDefaultConstraint)
         self.horizontalLayout_2.setSpacing(6)
@@ -193,12 +253,11 @@ class Ui_MainWindow(object):
         self.lineEdit.setMinimumSize(QtCore.QSize(0, 0))
         self.lineEdit.setBaseSize(QtCore.QSize(0, 0))
         font = QtGui.QFont()
-        font.setFamily("Courier New")
-        font.setPointSize(30)
+        font.setPointSize(23)
         self.lineEdit.setFont(font)
         self.lineEdit.setStyleSheet("border-radius: 10px;\n"
 "background-color: #D9D9D9;\n"
-"font-size: 25pt;\n"
+"font-size: 23pt;\n"
 "font-weight: regular;\n"
 "color: #000000;\n"
 "")
@@ -217,74 +276,16 @@ class Ui_MainWindow(object):
 "font-weight: regular;")
         self.pushButton_2.setText("")
         icon = QtGui.QIcon()
-        icon.addPixmap(QtGui.QPixmap("X:/Downloads/860787.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        icon.addPixmap(QtGui.QPixmap("image/icon_copy.png"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
         self.pushButton_2.setIcon(icon)
         self.pushButton_2.setIconSize(QtCore.QSize(40, 40))
         self.pushButton_2.setObjectName("pushButton_2")
         self.horizontalLayout_2.addWidget(self.pushButton_2)
         self.horizontalLayout_2.setStretch(0, 8)
         self.horizontalLayout_2.setStretch(1, 1)
-        self.gridLayout.addLayout(self.horizontalLayout_2, 2, 0, 1, 1)
-        self.horizontalLayout_9 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_9.setObjectName("horizontalLayout_9")
-        self.horizontalLayout_11 = QtWidgets.QHBoxLayout()
-        self.horizontalLayout_11.setObjectName("horizontalLayout_11")
-        self.verticalLayout = QtWidgets.QVBoxLayout()
-        self.verticalLayout.setObjectName("verticalLayout")
-        self.horizontalSlider = QtWidgets.QSlider(self.centralwidget)
-        self.horizontalSlider.setStyleSheet("QSlider::groove:horizontal {\n"
-"    height: 12px;                 /* толщина дорожки (было 6px) */\n"
-"    background: #D9D9D9;          /* цвет дорожки */\n"
-"    border-radius: 6px;           /* скругление под новую толщину */\n"
-"}\n"
-"\n"
-"QSlider::handle:horizontal {\n"
-"    background: #2CE429;          /* цвет бегунка */\n"
-"    border: 2px solid #999999;    /* рамка */\n"
-"    width: 24px;                  /* ширина бегунка */\n"
-"    height: 24px;                 /* высота бегунка (было 20px) */\n"
-"    margin: -10px 0;              /* центрируем относительно дорожки */\n"
-"    border-radius: 12px;          /* круг (половина от width/height) */\n"
-"}\n"
-"")
-        self.horizontalSlider.setOrientation(QtCore.Qt.Horizontal)
-        self.horizontalSlider.setObjectName("horizontalSlider")
-        self.verticalLayout.addWidget(self.horizontalSlider)
-        self.label_3 = QtWidgets.QLabel(self.centralwidget)
-        font = QtGui.QFont()
-        font.setFamily("Courier New")
-        font.setPointSize(25)
-        font.setBold(True)
-        font.setWeight(75)
-        self.label_3.setFont(font)
-        self.label_3.setStyleSheet("color: #2CE429;\n"
-"font-size: 25pt;\n"
-"font-weight: regular;")
-        self.label_3.setAlignment(QtCore.Qt.AlignCenter)
-        self.label_3.setObjectName("label_3")
-        self.verticalLayout.addWidget(self.label_3)
-        self.pushButton = QtWidgets.QPushButton(self.centralwidget)
-        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
-        sizePolicy.setHorizontalStretch(0)
-        sizePolicy.setVerticalStretch(0)
-        sizePolicy.setHeightForWidth(self.pushButton.sizePolicy().hasHeightForWidth())
-        self.pushButton.setSizePolicy(sizePolicy)
-        font = QtGui.QFont()
-        font.setFamily("Courier New")
-        font.setPointSize(30)
-        font.setBold(True)
-        font.setWeight(75)
-        self.pushButton.setFont(font)
-        self.pushButton.setFocusPolicy(QtCore.Qt.NoFocus)
-        self.pushButton.setStyleSheet("border-radius: 15px;\n"
-"background-color: #2CE429;\n"
-"font-size: 30pt;\n"
-"font-weight: regular;")
-        self.pushButton.setObjectName("pushButton")
-        self.verticalLayout.addWidget(self.pushButton)
-        self.horizontalLayout_11.addLayout(self.verticalLayout)
-        self.horizontalLayout_9.addLayout(self.horizontalLayout_11)
-        self.gridLayout.addLayout(self.horizontalLayout_9, 4, 0, 1, 1)
+        self.gridLayout.addLayout(self.horizontalLayout_2, 1, 0, 1, 1)
+        self.horizontalLayout = QtWidgets.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
         self.label = QtWidgets.QLabel(self.centralwidget)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
         sizePolicy.setHorizontalStretch(0)
@@ -297,20 +298,48 @@ class Ui_MainWindow(object):
         font.setBold(True)
         font.setWeight(75)
         self.label.setFont(font)
+        self.label.setLayoutDirection(QtCore.Qt.LeftToRight)
         self.label.setStyleSheet("color: #2CE429;\n"
 "font-size: 35pt;\n"
 "font-weight: regular;")
-        self.label.setAlignment(QtCore.Qt.AlignCenter)
+        self.label.setAlignment(QtCore.Qt.AlignRight|QtCore.Qt.AlignTrailing|QtCore.Qt.AlignVCenter)
         self.label.setObjectName("label")
-        self.gridLayout.addWidget(self.label, 1, 0, 1, 1)
-        self.gridLayout.setRowStretch(1, 5)
-        self.gridLayout.setRowStretch(2, 3)
-        self.gridLayout.setRowStretch(3, 2)
-        self.gridLayout.setRowStretch(4, 5)
+        self.horizontalLayout.addWidget(self.label)
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setMinimumSize(QtCore.QSize(40, 30))
+        self.label_2.setLayoutDirection(QtCore.Qt.LeftToRight)
+        self.label_2.setText("")
+        self.label_2.setPixmap(QtGui.QPixmap("image/icon_password.png"))
+        self.label_2.setScaledContents(False)
+        self.label_2.setAlignment(QtCore.Qt.AlignCenter)
+        self.label_2.setObjectName("label_2")
+        self.horizontalLayout.addWidget(self.label_2)
+        self.label_4 = QtWidgets.QLabel(self.centralwidget)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Minimum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label_4.sizePolicy().hasHeightForWidth())
+        self.label_4.setSizePolicy(sizePolicy)
+        font = QtGui.QFont()
+        font.setFamily("Courier New")
+        font.setPointSize(35)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_4.setFont(font)
+        self.label_4.setStyleSheet("color: #2CE429;\n"
+"font-size: 35pt;\n"
+"font-weight: regular;")
+        self.label_4.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
+        self.label_4.setObjectName("label_4")
+        self.horizontalLayout.addWidget(self.label_4)
+        self.horizontalLayout.setStretch(0, 3)
+        self.horizontalLayout.setStretch(1, 1)
+        self.horizontalLayout.setStretch(2, 3)
+        self.gridLayout.addLayout(self.horizontalLayout, 0, 0, 1, 1)
         self.gridLayout_2.addLayout(self.gridLayout, 0, 0, 1, 1)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
-        self.menubar.setGeometry(QtCore.QRect(0, 0, 858, 22))
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 753, 21))
         self.menubar.setObjectName("menubar")
         MainWindow.setMenuBar(self.menubar)
         self.statusbar = QtWidgets.QStatusBar(MainWindow)
@@ -323,10 +352,11 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label_3.setText(_translate("MainWindow", "<html><head/><body><p>Колличество символов:</p></body></html>"))
+        self.pushButton.setText(_translate("MainWindow", "Сгенерировать пароль"))
         self.checkBox_2.setText(_translate("MainWindow", "цифры"))
         self.checkBox.setText(_translate("MainWindow", "символы"))
         self.checkBox_4.setText(_translate("MainWindow", "нижний регистр"))
         self.checkBox_3.setText(_translate("MainWindow", "верхний регистр"))
-        self.label_3.setText(_translate("MainWindow", "<html><head/><body><p>Колличество символов:</p></body></html>"))
-        self.pushButton.setText(_translate("MainWindow", "Сгенерировать пароль"))
-        self.label.setText(_translate("MainWindow", "Генератор паролей"))
+        self.label.setText(_translate("MainWindow", "Генератор"))
+        self.label_4.setText(_translate("MainWindow", "паролей"))

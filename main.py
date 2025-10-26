@@ -2,7 +2,7 @@ import sys
 import random
 import string
 from PyQt5 import QtCore, QtGui, QtWidgets
-from pattern import Ui_MainWindow
+from pattern_2 import Ui_MainWindow
 
 class PasswordGenerator(QtWidgets.QMainWindow):
     def __init__(self):
@@ -20,7 +20,7 @@ class PasswordGenerator(QtWidgets.QMainWindow):
     def setup_initial_values(self):
         self.ui.horizontalSlider.setMinimum(4)
         self.ui.horizontalSlider.setMaximum(100)
-        self.ui.horizontalSlider.setValue(12)
+        self.ui.horizontalSlider.setValue(4)
 
         self.ui.checkBox_4.setChecked(True)
         self.ui.checkBox_3.setChecked(True)
@@ -57,7 +57,7 @@ class PasswordGenerator(QtWidgets.QMainWindow):
             characters += string.ascii_uppercase
 
         if not characters:
-            QtWidgets.QMessageBox.warning(self, "Ошибка", "Выберите хотя бы один тип символов!")
+            self.ui.lineEdit.setText("Выберите хотя бы один тип символов")
             return
 
         password = ''.join(random.choice(characters) for i in range(length))
@@ -75,7 +75,7 @@ class PasswordGenerator(QtWidgets.QMainWindow):
 
             QtCore.QTimer.singleShot(200, lambda: self.restore_copy_button(self.original_text, self.original_icon))
         else:
-            QtWidgets.QMessageBox.information(self, "Информация", "Сначала сгенерируйте пароль!")
+            self.ui.lineEdit.setText("Сначала сгенерируйте пароль")
 
     def restore_copy_button(self, text, icon):
         self.ui.pushButton_2.setText(text)
